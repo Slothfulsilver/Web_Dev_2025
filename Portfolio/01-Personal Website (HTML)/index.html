@@ -1,12 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Website - HTML</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial HTML</title>
+    <link href="./CSS/styles.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
-  
+    <div>
+        <h1>Silver</h1>
+        <p>
+             <b>Concept Artist at [P1] Games </b><br> 
+             <i>Av. de la Libertad #999</i>, <b>Zapopan</b>
+         </p>
+         <hr>
+         <p>
+             I'm Arturo Garcia, I'm an aspiring concept artist and creative director. I bring new innovative ideas for fantasy and science fiction stories, with a main focus in series and movies.
+             <br>Furthermore, I'm open to new work opportunities and experiences, contact me to know what I can bring to the table.
+             <br>These are some of my favorite <a href="destination.html">destinations</a>
+         </p>
+         <blockquote>"Devotion inspires bravery, bravery inspires sacrifice, sacrifice leads to death" <br> <b>--The Speaker</b></blockquote>
+    </div>
+    <div>
+        <h2>Background</h2>
+        <p>
+            Since I was a kid i loved videogames, so I would love to become a succesful Concept Artist for a big studio, such as Riot Games
+        </p>
+    </div>
+   <div>
+    <h2>Education</h2>
+        <ul>
+            <li><b>Kinder-kin</b>, Guadalajara, <em>(2003-2005)</em>
+                <img src="Img/images.png" alt="Kinder-Kin Logo"/>
+            </li>
+            <li><b>Colegio Altamira</b>, Guadalajara, <em>(2005-2012)</em>
+                <img src="Img/colegio-altamira-logo.png" alt="Altamira Logo" />
+            </li>
+            <li>
+                <b>Colegio Americano Gipsy</b>, Cd. del Carmen, <em>(2012-2019)</em>
+                <img src="Img/logo-HP.png" alt="Gipsy Logo"/>
+            </li>
+            <li>
+                <b>Universidad Panamericana</b>, Guadalajara, <em>(2019-2026)</em>
+                 <img src="./Img/universidad-panamericana.svg" alt="UP Logo"/>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h2>Skills</h2>
+        <ol type="I" start="0">
+            <li>Concept Artist</li>
+            <li>Hardcore Gamer</li>
+            <li>Pencil Drawing</li>
+            <li>Swimmer</li>
+            <li>Pokemon Fanatic Extraordianire</li>
+        </ol>
+    </div>
+    <div>
+        <h2>Hobbies</h2>
+        <h3>Favorite Food</h3>
+            <ol id="top5">
+                <li>Italian</li>
+                <li>Japanese</li>
+                <li>Korean</li>
+                <li>Mexican</li>
+                <li>Thai</li>
+            </ol>
+            <ol start="19" id="bot3">
+                <li>Russian</li>
+                <li>Greek</li>
+                <li>French</li>
+            </ol>
+        <h3>Favorite Books, Movies & TV Shows</h3>
+            <ul>
+                <li><span>Books</span></li>
+                    <ol>
+                        <li>Fourth Wing</li>
+                        <li>Maze Runner</li>
+                        <li>Carve the Mark</li>
+                    </ol>
+                <li><span>Movies</span></li>
+                    <ol>
+                        <li>How To Train Your Dragon</li>
+                        <li>Spider-Man: Into the Spider-verse</li>
+                        <li>Puss in Boots: The Last Wish</li>
+                    </ol>
+                <li><span>TV Shows</span></li>
+                    <ol>
+                        <li>Brooklyn Nine-Nine</li>
+                        <li>The Owl House</li>
+                        <li>Gravity Falls</li>
+                    </ol>
+            </ul>
+    </div>
+    <div>
+        <h2>Family Birthdays</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th colspan="2">Fullname</th>
+                    <th rowspan="2">Birthday</th>
+                </tr>
+                <tr>
+                    <th>Name</th>
+                    <th>Lastname</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Arturo</td>
+                    <td>Garcia</td>
+                    <td>September 11</td>
+                </tr>
+                <tr>
+                    <td>Maria Jose</td>
+                    <td>Garcia</td>
+                    <td>October 28</td>
+                </tr>
+                <tr>
+                    <td>Elizabeth</td>
+                    <td>Brambila</td>
+                    <td>February 21</td>
+                </tr>
+                <tr>
+                    <td>Arturo Javier</td>
+                    <td>Garcia</td>
+                    <td>September 29</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <caption>Table of Birthdays</caption>
+            </tfoot>
+        </table>
+    </div>
+    <div>
+        <h2>Agenda</h2>
+        <form>
+            <label for="event">Event</label>
+            <input type="text" placeholder="Event"/>
+            <label for="free">Free Time</label>
+            <input type="checkbox" name="free"/>
+    
+        </form>
+    </div>
 </body>
 </html>

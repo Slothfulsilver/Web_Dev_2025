@@ -1,0 +1,56 @@
+img {
+    width: 200px;
+}
+
+.flags {
+    width: 100px;
+    border: 1px dotted red;
+}
+
+.jp {
+    padding: 5px;
+    border-radius: 30%;
+}
+
+ol li{
+    color: brown;
+}
+
+#top5 li{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#bot3 li{
+    text-decoration: line-through;
+    color: red;
+    font-weight: bolder;
+}
+
+h2{
+    border-bottom: 3px dotted red;
+}
+
+h2:hover{
+    border-bottom: 6px dotted green;
+}
+
+table{
+    border: 4px double blueviolet;
+}
+
+thead{
+    background-color: blue;
+    color: white;
+}
+
+tbody tr:nth-child(even){
+    background-color: gray;
+}
+
+p{
+    padding: 15px;
+    margin: 20px;
+    border: 10px solid black;
+}
