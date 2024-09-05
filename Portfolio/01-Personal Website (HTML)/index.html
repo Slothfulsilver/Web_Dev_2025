@@ -8,12 +8,13 @@
 </head>
 <body>
     <div>
-        <h1>Silver</h1>
+        <h1>Silver</h1> 
+        <hr>
         <p>
              <b>Concept Artist at [P1] Games </b><br> 
              <i>Av. de la Libertad #999</i>, <b>Zapopan</b>
          </p>
-         <hr>
+        
          <p>
              I'm Arturo Garcia, I'm an aspiring concept artist and creative director. I bring new innovative ideas for fantasy and science fiction stories, with a main focus in series and movies.
              <br>Furthermore, I'm open to new work opportunities and experiences, contact me to know what I can bring to the table.
@@ -21,6 +22,7 @@
          </p>
          <blockquote>"Devotion inspires bravery, bravery inspires sacrifice, sacrifice leads to death" <br> <b>--The Speaker</b></blockquote>
     </div>
+    <hr>
     <div>
         <h2>Background</h2>
         <p>
@@ -28,23 +30,39 @@
         </p>
     </div>
    <div>
+    <hr>
     <h2>Education</h2>
-        <ul>
-            <li><b>Kinder-kin</b>, Guadalajara, <em>(2003-2005)</em>
-                <img src="Img/images.png" alt="Kinder-Kin Logo"/>
-            </li>
-            <li><b>Colegio Altamira</b>, Guadalajara, <em>(2005-2012)</em>
-                <img src="Img/colegio-altamira-logo.png" alt="Altamira Logo" />
-            </li>
-            <li>
-                <b>Colegio Americano Gipsy</b>, Cd. del Carmen, <em>(2012-2019)</em>
-                <img src="Img/logo-HP.png" alt="Gipsy Logo"/>
-            </li>
-            <li>
-                <b>Universidad Panamericana</b>, Guadalajara, <em>(2019-2026)</em>
-                 <img src="./Img/universidad-panamericana.svg" alt="UP Logo"/>
-            </li>
-        </ul>
+    <table>
+      <thead>
+        <tr>
+          <th>School</th>
+          <th>Site</th>
+          <th>Logo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>Kinder-kin</b>, Guadalajara, <em>(2003-2005)</em></td>
+          <td><a href="https://www.facebook.com/kinderkinmx?ref=hl">Facebook page</a></td>
+          <td><img src="Img/images.png" alt="Kinder-Kin Logo"/></td>
+        </tr>
+        <tr>
+          <td><b>Colegio Altamira</b>, Guadalajara, <em>(2005-2012)</em></td>
+          <td><a href="https://www.altamira.edu.mx">Web page</a></td>
+          <td><img src="Img/colegio-altamira-logo.png" alt="Altamira Logo" /></td>
+        </tr>
+        <tr>
+          <td><b>Colegio Americano Gipsy</b>, Cd. del Carmen, <em>(2012-2019)</em></td>
+          <td><a href="https://www.gipsy.edu.mx/nosotros.html">Web page</a></td>
+          <td><img src="Img/logo-HP.png" alt="Gipsy Logo"/></td>
+        </tr>
+        <tr>
+          <td><b>Universidad Panamericana</b>, Guadalajara, <em>(2019-2026)</em></td>
+          <td><a href="https://www.up.edu.mx">Web page</a></td>
+          <td><img src="./Img/universidad-panamericana.svg" alt="UP Logo"/></td>
+        </tr>
+      </tbody>
+    </table>
     </div>
     <div>
         <h2>Skills</h2>
@@ -93,6 +111,7 @@
                     </ol>
             </ul>
     </div>
+    <hr>
     <div>
         <h2>Family Birthdays</h2>
         <table border="1">
@@ -133,15 +152,37 @@
             </tfoot>
         </table>
     </div>
+    <hr>
+      <h2>Schedule</h2>
+      <form method="post">
+        <label for="Date">Date: </label>
+        <input type="date" id="Date" name="Date"/>
+        <label for="Stime">Start Time: </label>
+        <input type="time" id="Stime" name="Stime"/>
+        <label for="Etime">End Time: </label>
+        <input type="time" id="Etime" name="Etime"/><br>
+        <label for="Activity">Activity: </label> <br>
+        <input type="text" id="Activity" name="Activity" placeholder="Description...."/> <br>
+        <label for="Place">Place: </label>
+        <input type="text" id="Place" name="Place" placeholder="Location"/>
+        <label for="Type">Type: </label>
+        <select id="Type" name="Type" size="1"> 
+          <option value="School">School</option>
+          <option value="Personal">Personal</option>
+          <option value="Professional">Professional</option>
+          <option value="Familar">Familar</option>
+          <option value="Other">Other</option>
+        </select> <br>
+        <label for="Notes">Notes: </label>
+        <textarea name="Notes" id="Notes" rows="4" cols="50" placeholder="Add some notes here..."></textarea> <br>
+        <label for="Flag">Priority:</label>
+        <input type="color" name="Flag" id="Flag"/>
+        <label for="Free">Free: </label>
+        <input type="checkbox" name="Free" id="Free" value="Free"/> <br>
+        <input type="submit" id="Submit" name="Submit"/>
+      </form>
     <div>
-        <h2>Agenda</h2>
-        <form>
-            <label for="event">Event</label>
-            <input type="text" placeholder="Event"/>
-            <label for="free">Free Time</label>
-            <input type="checkbox" name="free"/>
-    
-        </form>
+
     </div>
 </body>
 </html>
