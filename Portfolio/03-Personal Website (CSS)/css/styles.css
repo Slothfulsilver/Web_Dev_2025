@@ -1,3 +1,104 @@
-body {
-  margin: 0;
+body{
+    background-color: #be84cc;
+    font-family: 'Merriweather', serif;
+    display:flex; flex-direction:column; justify-content:center;
+    min-height:100vh;
+    text-align: center;
 }
+
+div{
+    align-self: center;
+}
+
+h1{
+    font-family: 'Sacramento', cursive;
+    font-size: 5.5rem;
+    margin: 50px;
+    color: #9c0060;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+    color: #d10e60;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    color: #b30c51;
+}
+
+hr{
+    align-self: center;
+    border: 6px dotted #EAF6F6;
+    border-bottom: 0;
+    width: 4%;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+img {
+    width: 150px;
+}
+
+table{
+    border: 4px double blueviolet;
+}
+
+thead{
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+tbody tr:nth-child(even){
+    background-color: #d163d4;
+}
+
+div:nth-of-type(even){
+    background: #d163d4;
+}
+
+
+#logo{
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+}
+
+#sch-form{
+    border: 2px #9c0060 dotted;
+    background-color: #c969d6;
+}
+
+
+.card img{
+    width: 300px;
+    height: 300px;
+}
+
+.column {
+    float: left;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  /* Clear floats */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: #d10e60;
+  }
+  
