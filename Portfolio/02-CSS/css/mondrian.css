@@ -1,0 +1,77 @@
+body{
+    margin-left: 20px;
+}
+
+.container{
+    width: 700px;
+    height: 500px;
+    background-color: lightgray;
+    display: flex;
+    border: 10px solid lightblue;
+}
+
+.box{
+    border: 5px solid;
+}
+
+#one{
+    background-color: white;
+    width: 200px;
+    height: 300px;
+}
+
+#two{
+    
+}
+
+#three{
+
+}
+
+#four{
+
+}
+
+#five{
+
+}
+
+#six{
+
+}
+
+#seven{
+
+}
+
+#eight{
+
+}
+
+#nine{
+
+}
+
+#ten{
+
+}
+
+#eleven{
+
+}
+
+#twelve{
+
+}
+
+#thirteen{
+
+}
+
+#fourteen{
+
+}
+
+#fifteen{
+
+}

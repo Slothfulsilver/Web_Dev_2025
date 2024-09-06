@@ -1,3 +1,26 @@
 body {
     margin: 0;
 }
+
+div{
+    width: 200px;
+    height: 200px;
+}
+
+#top{
+    border: 10px solid;
+    padding: 20px;
+    background-color: red;
+}
+
+#mid{
+    border: 20px solid;
+    background-color: blue;
+    margin-left: 260px;
+}
+
+#bot{
+    border: 10px solid;
+    background-color: yellow;
+    margin-left: 500px;
+}
