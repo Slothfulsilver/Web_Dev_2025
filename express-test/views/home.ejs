@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <img src="./img/rm692xkp1nrc1.jpeg"/>
+    <h1>BMI Calculator EJS</h1>
+    <h3>Hello <%= name %> <%= lastname %></h3>
+    <form>
+        <input type="number" name="weight" placeholder="Weight"/>
+        <input type="number" name="height" placeholder="Height"/>
+        <button type="submit">Calculate BMI</button>
+    </form>
+    <ul>
+        <% shopping.forEach((value) => { %>
+            <li><%= value %></li>
+        <% }) %>
+    </ul>
+    <% if(locals.students && students.length != 0) { %>
+        <h2>Students</h2>
+        <% students.forEach((students, index) => { %>
+            <div>
+                <h1><%= index + 1 %>. <%= students.name %> <%= students.lastname %> (ID: <%= students.id %>)</h1>
+                <h3><%= students.yob %></h3>
+                <hr/>
+            </div>
+        <% }); %>
+    <% } %>
+</body>
+</html>

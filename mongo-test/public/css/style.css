@@ -1,0 +1,16 @@
+body {
+    background-color: lightslategray;
+}
+
+table , td {
+    border: 2px solid red;
+}
+
+td{
+    width: 75px;
+}
+
+thead {
+    background-color: darksalmon;
+    color: aliceblue;
+}
