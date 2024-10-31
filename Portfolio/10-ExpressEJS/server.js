@@ -15,6 +15,7 @@ const longContent =
 
 let posts = [];
 let name;
+let logIn = null;
 
 /*app.route("/") 
   .get((req, res) => {
@@ -31,12 +32,40 @@ let name;
 
 app.route('/')
   .get((req, res) => {
-    name = req.query.name
-    res.render("test", {name})
+    res.render("test", {user: logIn, posts: posts});
   });
 
-app.get('/user?:name', (req, res) => {
-  
+app.post('/login', (req, res) => {
+  const user = req.body.user;
+  if (user) {
+    logIn = user;
+    res.redirect('/home');
+  } else {
+    res.redirect('/');
+  }
+
+app.get('/home', (req, res) => {
+  if (logIn) {
+    res.render('home', { user: logIn, posts: posts });
+  } else {
+    res.redirect('/');
+  }
+});
+
+app.post('/post', (req, res) => {
+  const title = req.body.title;
+  const content = req.body.content;
+  if (content && title){
+    const newPost = {
+      id: posts.length + 1,
+      title: title,
+      content: content
+    }
+    posts.push(newPost);
+  }
+  res.redirect('/home')
+});
+
 });
 app.listen(3000, (err) => {
   console.log("Listening on port 3000");

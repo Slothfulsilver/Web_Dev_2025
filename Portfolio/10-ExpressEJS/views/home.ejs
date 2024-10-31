@@ -1,0 +1,20 @@
+<%- include("partials/header") %>
+
+<h1>Hello <%= user %></h1>
+
+<h2>Posts</h2>
+<form action="/post" method="POST">
+    <label>Title</label>
+    <input type="text" name="title" id="title" maxlength="50"> <br>
+    <label>Content</label>
+    <input type="text" name="content" id="content" maxlength="100"><br>
+    <input type="submit" value="Post">
+</form>
+<% posts.forEach((post, index) => { %>
+    <div class="post" style="border: 2px solid #000;"> 
+        <h3 class="title">Title: <%= post.title %></h3>
+        <p title="content">content: <%= post.content %></p>
+    </div>
+<% }) %>
+
+<%- include("partials/footer") %>
