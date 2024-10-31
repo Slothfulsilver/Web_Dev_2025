@@ -21,7 +21,7 @@ function drawFace(ctx, radius) {
 function drawNumbers(ctx, radius) {
   //TODO: Make sure you show all the numbers
   var ang;
-  var num = 1;
+  var num = 12;
   ctx.font = radius * 0.15 + "px arial";
   ctx.textBaseline = "middle";
   ctx.fillStyle = "#333";

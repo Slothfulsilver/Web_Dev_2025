@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express test</title>
+</head>
+
+<body>
+    <% if (locals.error) { %>
+        <h3>
+            <%= error %>
+        </h3>
+        <% } else {%>
+            <form action="/greet" method="GET">
+                Register:
+                <input type="text" name="name" id="name" placeholder="Name">
+                <input type="submit" value="go next">
+            </form>
+            <h2>Greetings</h2>
+            <div id="greetings">
+                <% if (names.length > 0) { %>
+                    <ul>
+                        <% names.forEach(name => { %>
+                            <li><a href="/wazzup?name=<%= name %>"><%= name %></a></li>
+                        <% }); %>
+                    </ul>
+                <% } else { %>
+                    <p>No greetings yet.</p>
+                <% } %>
+            </div>
+        <% } %>
+
+        <h2>Todo List</h2>
+        <form action="/task" method="post">
+            <input type="text" name="toDo" id="toDo" placeholder="To Do...">
+            <input type="submit" value="New">
+        </form>
+        <h3>List</h3>
+            <div id="List">
+                    <ul>
+                        <% tasks.forEach((task, index) => { %>
+                            <li>
+                                <%= task %></a>
+                                <form action="/task/delete/<%= index %>" method="POST" style="display:inline;">
+                                    <button type="submit">Delete</button>
+                                </form>
+                            </li>   
+                        <% }); %>
+                    </ul>
+            </div>
+</body>
+
+</html>
