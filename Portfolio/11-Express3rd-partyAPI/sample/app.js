@@ -5,10 +5,11 @@ const axios = require("axios");
 const FormData = require("form-data");
 
 const app = express();
-
+const key = "8d50afb168b0e03faa08773ea0859d3a"
+const city = "";
 // https get
 app.get("/", (req, res) => {
-  var url = "http://placekitten.com/g/300/300";
+  var url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`;
   https.get(url, (response) => {
     console.log(response.statusCode);
     response.on("data", (data) => {
